@@ -1,0 +1,475 @@
+/* src/views/About/About.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    background: #f7f8fc;
+    overflow-x: hidden;
+    color: #0f172a;
+}
+
+/* =========================================
+   LOADER
+========================================= */
+
+.desktop-about-loader-wrapper {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f7f8fc;
+}
+
+.desktop-about-loader {
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    border: 4px solid rgba(37, 99, 235, 0.15);
+    border-top: 4px solid #2563eb;
+
+    animation: desktopAboutSpin 0.7s linear infinite;
+}
+
+@keyframes desktopAboutSpin {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.desktop-about-error {
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: #0f172a;
+}
+
+/* =========================================
+   SECTION
+========================================= */
+
+.desktop-about {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding-top: 95px;
+    padding-bottom: 50px;
+
+    background: #f7f8fc;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.desktop-about .container {
+    max-width: 1320px;
+}
+
+/* =========================================
+   ROW
+========================================= */
+
+.desktop-about .row {
+    min-height: calc(100vh - 130px);
+
+    align-items: center;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.desktop-about-content {
+    width: 100%;
+    max-width: 650px;
+}
+
+/* =========================================
+   SUBTITLE
+========================================= */
+
+.desktop-about-subtitle {
+    display: inline-block;
+
+    margin-bottom: 1rem;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+    text-transform: uppercase;
+
+    color: #2563eb;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.desktop-about-title {
+    font-size: clamp(3.2rem, 4vw, 4.4rem);
+
+    font-weight: 700;
+    line-height: 0.96;
+
+    letter-spacing: -3px;
+
+    color: #0f172a;
+
+    margin-bottom: 1.2rem;
+}
+
+.desktop-about-title span {
+    display: block;
+
+    margin-top: 0.15rem;
+
+    color: #2563eb;
+}
+
+/* =========================================
+   LINE
+========================================= */
+
+.desktop-about-line {
+    width: 70px;
+    height: 4px;
+
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    margin-bottom: 1.8rem;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.desktop-about-description {
+    max-width: 590px;
+
+    font-size: 1.02rem;
+    font-weight: 400;
+
+    line-height: 1.9;
+
+    color: #667085;
+
+    margin-bottom: 2.5rem;
+}
+
+/* =========================================
+   FEATURES
+========================================= */
+
+.desktop-about-features {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 1.4rem;
+
+    margin-bottom: 2.7rem;
+}
+
+.desktop-about-feature {
+    width: 100%;
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.desktop-about-feature-icon {
+    font-size: 1.45rem;
+
+    color: #2563eb;
+
+    margin-bottom: 0.7rem;
+}
+
+/* =========================================
+   FEATURE TITLE
+========================================= */
+
+.desktop-about-feature h5 {
+    font-size: 0.98rem;
+    font-weight: 700;
+
+    line-height: 1.45;
+
+    color: #111827;
+
+    margin-bottom: 0.7rem;
+}
+
+/* =========================================
+   FEATURE TEXT
+========================================= */
+
+.desktop-about-feature p {
+    font-size: 0.9rem;
+
+    line-height: 1.8;
+
+    color: #667085;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.desktop-about-buttons {
+    display: flex;
+    align-items: center;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+}
+
+/* =========================================
+   BASE BUTTON
+========================================= */
+
+.desktop-about-btn-primary,
+.desktop-about-btn-outline,
+.desktop-about-next-btn {
+    height: 56px;
+
+    padding: 0 1.7rem;
+
+    border-radius: 0;
+
+    font-size: 0.92rem;
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.75rem;
+
+    cursor: pointer;
+
+    border: 2px solid #0f172a;
+
+    background: #ffffff;
+
+    color: #0f172a;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+
+    box-shadow:
+        7px 7px 0px #000000;
+}
+
+/* ICONS */
+
+.desktop-about-btn-primary svg,
+.desktop-about-btn-outline svg,
+.desktop-about-next-btn svg {
+    font-size: 0.95rem;
+
+    flex-shrink: 0;
+}
+
+/* =========================================
+   BUTTON HOVER
+========================================= */
+
+.desktop-about-btn-primary:hover,
+.desktop-about-btn-outline:hover,
+.desktop-about-next-btn:hover {
+    transform: translate(-4px, -4px);
+
+    background: #1e3a8a;
+
+    border-color: #1e3a8a;
+
+    color: #ffffff;
+
+    box-shadow:
+        13px 13px 0px #000000;
+}
+
+/* =========================================
+   NEXT BUTTON
+========================================= */
+
+.desktop-about-next {
+    display: none;
+}
+
+.desktop-about-next-btn {
+    width: 100%;
+}
+
+/* =========================================
+   IMAGE WRAPPER
+========================================= */
+
+.desktop-about-image-wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.desktop-about-image {
+    width: 100%;
+    max-width: 560px;
+
+    object-fit: contain;
+
+    user-select: none;
+}
+
+/* =========================================
+   LARGE
+========================================= */
+
+@media (max-width: 1400px) {
+
+    .desktop-about-title {
+        font-size: 4rem;
+    }
+
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1200px) {
+
+    .desktop-about-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 991px) {
+
+    .desktop-about {
+        padding-top: 130px;
+    }
+
+    .desktop-about .row {
+        gap: 3rem;
+    }
+
+    .desktop-about .col-lg-5 {
+        order: 1;
+    }
+
+    .desktop-about .col-lg-7 {
+        order: 2;
+    }
+
+    .desktop-about-content {
+        text-align: center;
+
+        margin: 0 auto;
+    }
+
+    .desktop-about-title {
+        font-size: 3.3rem;
+    }
+
+    .desktop-about-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .desktop-about-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .desktop-about-features {
+        grid-template-columns: 1fr;
+
+        gap: 1.5rem;
+    }
+
+    .desktop-about-buttons {
+        justify-content: center;
+    }
+
+    .desktop-about-btn-primary,
+    .desktop-about-btn-outline {
+        width: 100%;
+    }
+
+    .desktop-about-btn-primary,
+    .desktop-about-btn-outline,
+    .desktop-about-next-btn {
+        box-shadow:
+            6px 6px 0px #000000;
+    }
+
+    .desktop-about-btn-primary:hover,
+    .desktop-about-btn-outline:hover,
+    .desktop-about-next-btn:hover {
+        transform: none;
+
+        background: #1e3a8a;
+
+        border-color: #1e3a8a;
+
+        color: #ffffff;
+
+        box-shadow:
+            6px 6px 0px #000000;
+    }
+
+    .desktop-about-next {
+        display: flex;
+
+        margin-top: 1rem;
+    }
+
+    .desktop-about-image {
+        max-width: 430px;
+    }
+
+}

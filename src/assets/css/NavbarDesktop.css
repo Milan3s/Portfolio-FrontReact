@@ -1,0 +1,11 @@
+/* Navbar Desktop */
+
+.nav-desktop-link {
+    transition: all 0.2s ease;
+}
+
+.nav-desktop-link:hover {
+    background: #111111;
+    color: white !important;
+    transform: translateY(-1px);
+}

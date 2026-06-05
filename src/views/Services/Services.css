@@ -1,0 +1,471 @@
+/* src/views/Services/Services.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+/* ========================================
+   RESET
+======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  background: #f4f6fb;
+  overflow-x: hidden;
+}
+
+/* ========================================
+   LOADER
+======================================== */
+
+.desktop-services-loader-wrapper {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f4f6fb;
+}
+
+.desktop-services-loader {
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  border: 4px solid rgba(37, 99, 235, 0.15);
+  border-top: 4px solid #2563eb;
+
+  animation: desktopServicesSpin 0.7s linear infinite;
+}
+
+@keyframes desktopServicesSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.desktop-services-error {
+  font-size: 1rem;
+  font-weight: 600;
+
+  color: #0f172a;
+}
+
+/* ========================================
+   SECTION
+======================================== */
+
+.desktop-services {
+  width: 100%;
+  min-height: 100vh;
+
+  padding-top: 120px;
+  padding-bottom: 70px;
+
+  background: #f4f6fb;
+}
+
+/* ========================================
+   CONTAINER
+======================================== */
+
+.desktop-skills .container {
+  max-width: 1320px;
+
+  margin: 0 auto;
+
+  padding: 0 20px;
+}
+
+/* ========================================
+   HEADER
+======================================== */
+
+.desktop-services-header {
+  margin-bottom: 3rem;
+}
+
+.desktop-services-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+
+  color: #0f172a;
+
+  margin-bottom: 1rem;
+}
+
+.desktop-services-line {
+  width: 100%;
+  height: 4px;
+
+  margin-bottom: 1.5rem;
+
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #7c3aed
+  );
+}
+
+.desktop-services-description {
+  max-width: 900px;
+
+  font-size: 1.05rem;
+  font-weight: 500;
+
+  line-height: 1.9;
+
+  color: #64748b;
+}
+
+/* ========================================
+   GRID
+======================================== */
+
+.desktop-services-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1.75rem;
+}
+
+/* ========================================
+   CARD
+======================================== */
+
+.desktop-service-card {
+  background: #ffffff;
+
+  border: 1px solid #e7edf7;
+
+  border-radius: 24px;
+
+  padding: 1.2rem;
+
+  min-height: 370px;
+
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.desktop-service-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 16px 35px rgba(15, 23, 42, 0.12);
+}
+
+/* ========================================
+   HEADER CARD
+======================================== */
+
+.desktop-service-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  margin-bottom: 1.5rem;
+}
+
+.desktop-service-title-wrapper {
+  flex: 1;
+}
+
+/* ========================================
+   ICON
+======================================== */
+
+.desktop-service-icon {
+  width: 64px;
+  height: 64px;
+
+  min-width: 64px;
+
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+}
+
+.desktop-service-icon i {
+  font-size: 1.9rem;
+}
+
+/* ========================================
+   ACCENT COLORS
+======================================== */
+
+.desktop-service-icon.purple {
+  background: linear-gradient(
+    135deg,
+    #7c3aed,
+    #a855f7
+  );
+}
+
+.desktop-service-icon.blue {
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #60a5fa
+  );
+}
+
+.desktop-service-icon.green {
+  background: linear-gradient(
+    135deg,
+    #10b981,
+    #34d399
+  );
+}
+
+.desktop-service-icon.pink {
+  background: linear-gradient(
+    135deg,
+    #ec4899,
+    #f472b6
+  );
+}
+
+.desktop-service-icon.cyan {
+  background: linear-gradient(
+    135deg,
+    #06b6d4,
+    #38bdf8
+  );
+}
+
+.desktop-service-icon.orange {
+  background: linear-gradient(
+    135deg,
+    #f59e0b,
+    #fbbf24
+  );
+}
+
+/* ========================================
+   TITLE
+======================================== */
+
+.desktop-service-title-wrapper h3 {
+  font-size: 1.0rem;
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  color: #0f172a;
+
+  margin-bottom: 0.75rem;
+}
+
+/* ========================================
+   COLOR LINE
+======================================== */
+
+.desktop-service-card-line {
+  width: 72px;
+  height: 4px;
+
+  border-radius: 999px;
+}
+
+.desktop-service-card-line.purple {
+  background: #8b5cf6;
+}
+
+.desktop-service-card-line.blue {
+  background: #3b82f6;
+}
+
+.desktop-service-card-line.green {
+  background: #34d399;
+}
+
+.desktop-service-card-line.pink {
+  background: #ec4899;
+}
+
+.desktop-service-card-line.cyan {
+  background: #38bdf8;
+}
+
+.desktop-service-card-line.orange {
+  background: #f59e0b;
+}
+
+/* ========================================
+   LIST
+======================================== */
+
+.desktop-service-description-list {
+  width: 100%;
+}
+
+.desktop-service-description-list ul {
+  padding-left: 1.25rem;
+
+  margin: 0;
+}
+
+.desktop-service-description-list li {
+  font-size: 0.96rem;
+  font-weight: 500;
+
+  line-height: 1.9;
+
+  color: #475569;
+
+  margin-bottom: 0.35rem;
+}
+
+.desktop-service-description-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* ========================================
+   NEXT BUTTON
+======================================== */
+
+.desktop-services-next {
+  display: none;
+}
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1200px) {
+  .desktop-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 991px) {
+  .desktop-services {
+    padding-top: 115px;
+    padding-bottom: 60px;
+  }
+
+  .desktop-services .container {
+    padding: 0 20px;
+  }
+
+  .desktop-services-title {
+    font-size: 2rem;
+  }
+
+  .desktop-services-description {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .desktop-services-grid {
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+  }
+
+  .desktop-service-card {
+    min-height: auto;
+
+    padding: 1.5rem;
+  }
+
+  .desktop-service-icon {
+    width: 58px;
+    height: 58px;
+
+    min-width: 58px;
+  }
+
+  .desktop-service-icon i {
+    font-size: 1.6rem;
+  }
+
+  .desktop-service-title-wrapper h3 {
+    font-size: 1.05rem;
+  }
+
+  .desktop-service-description-list li {
+    font-size: 0.92rem;
+  }
+
+  .desktop-services-next {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin-top: 2.5rem;
+  }
+
+  .desktop-services-next-btn {
+    width: 100%;
+    max-width: 320px;
+    height: 56px;
+
+    border: 2px solid #0f172a;
+    border-radius: 0;
+
+    background: #ffffff;
+
+    color: #0f172a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.7rem;
+
+    font-size: 0.92rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow: 6px 6px 0px #000000;
+
+    transition:
+      transform 0.25s ease,
+      border-color 0.25s ease,
+      box-shadow 0.25s ease,
+      background 0.25s ease,
+      color 0.25s ease;
+  }
+
+  .desktop-services-next-btn:hover {
+    transform: none;
+
+    border-color: #1e3a8a;
+
+    background: #1e3a8a;
+
+    color: #ffffff;
+
+    box-shadow: 6px 6px 0px #000000;
+  }
+}

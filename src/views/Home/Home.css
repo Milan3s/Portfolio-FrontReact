@@ -1,0 +1,832 @@
+/* src/views/desktop/Home/Home.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+body {
+
+    background: #f4f6fb;
+
+    overflow-x: hidden;
+
+    color: #0f172a;
+
+}
+
+/* =========================================
+   LOADER
+========================================= */
+
+#desktop-home-loader-wrapper,
+.desktop-home-loader-wrapper {
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #f4f6fb;
+
+}
+
+#desktop-home-loader,
+.desktop-home-loader {
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    border: 4px solid rgba(37, 99, 235, 0.12);
+    border-top: 4px solid #2563eb;
+
+    animation: desktopHomeSpin 0.7s linear infinite;
+
+}
+
+@keyframes desktopHomeSpin {
+
+    0% {
+
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+
+        transform: rotate(360deg);
+
+    }
+
+}
+
+#desktop-home-error,
+.desktop-home-error {
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    color: #0f172a;
+
+}
+
+/* =========================================
+   SECTION
+========================================= */
+
+#desktop-home-section,
+.desktop-home {
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 120px;
+    padding-bottom: 80px;
+
+    background:
+        radial-gradient(
+            circle at top,
+            rgba(37, 99, 235, 0.05),
+            transparent 45%
+        ),
+        #f4f6fb;
+
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+#desktop-home-container,
+.desktop-home .container {
+
+    width: 100%;
+    max-width: 1320px;
+
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+#desktop-home-content,
+.desktop-home-content {
+
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+#desktop-home-hero,
+.desktop-home-hero {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 3rem;
+
+}
+
+/* =========================================
+   LOGO
+========================================= */
+
+#desktop-home-logo-wrapper,
+.desktop-home-logo-wrapper {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1.8rem;
+
+}
+
+#desktop-home-logo,
+.desktop-home-logo {
+
+    width: 270px;
+
+    object-fit: contain;
+
+    user-select: none;
+
+    filter:
+        drop-shadow(
+            0 12px 28px rgba(15, 23, 42, 0.08)
+        );
+
+}
+
+/* =========================================
+   TITLE BLOCK
+========================================= */
+
+#desktop-home-title-block,
+.desktop-home-title-block {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 2rem;
+
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+#desktop-home-title,
+.desktop-home-title {
+
+    font-size: clamp(5rem, 8vw, 7.6rem);
+
+    font-weight: 700;
+
+    line-height: 0.9;
+
+    letter-spacing: -7px;
+
+    text-transform: uppercase;
+
+    color: #020617;
+
+    margin-bottom: 1.8rem;
+
+}
+
+/* =========================================
+   TITLE LINE WRAPPER
+========================================= */
+
+#desktop-home-title-line-wrapper,
+.desktop-home-title-line-wrapper {
+
+    width: 100%;
+    max-width: 760px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* =========================================
+   MAIN LINE
+========================================= */
+
+#desktop-home-title-line,
+.desktop-home-title-line {
+
+    width: 100%;
+    height: 6px;
+
+    background: linear-gradient(
+        90deg,
+        #2563eb,
+        #7c3aed
+    );
+
+}
+
+/* =========================================
+   TAGLINE WRAPPER
+========================================= */
+
+#desktop-home-tagline-wrapper,
+.desktop-home-tagline-wrapper {
+
+    width: 100%;
+
+    margin-bottom: 1.5rem;
+
+}
+
+/* =========================================
+   TAGLINE
+========================================= */
+
+#desktop-home-tagline,
+.desktop-home-tagline {
+
+    display: inline-block;
+
+    font-size: 1.65rem;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    letter-spacing: -1px;
+
+    color: #0f172a;
+
+}
+
+/* =========================================
+   DESCRIPTION WRAPPER
+========================================= */
+
+#desktop-home-description-wrapper,
+.desktop-home-description-wrapper {
+
+    width: 100%;
+
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+#desktop-home-description,
+.desktop-home-description {
+
+    width: 100%;
+    max-width: 860px;
+
+    margin: 0 auto;
+
+    font-size: 1.08rem;
+
+    line-height: 2;
+
+    color: #64748b;
+
+}
+
+/* =========================================
+   STATS
+========================================= */
+
+#desktop-home-stats,
+.desktop-home-stats {
+
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 1.5rem;
+
+    margin-bottom: 3rem;
+
+}
+
+/* =========================================
+   STAT CARD
+========================================= */
+
+.desktop-home-stat-card {
+
+    background: #ffffff;
+
+    border: 2px solid #dbe3ef;
+    border-radius: 0;
+
+    padding: 2rem;
+
+    display: flex;
+    align-items: center;
+
+    gap: 1.3rem;
+
+    text-align: left;
+
+    box-shadow:
+        0 8px 20px rgba(15, 23, 42, 0.05);
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+.desktop-home-stat-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #0f172a;
+
+    box-shadow:
+        8px 8px 0px #000000;
+
+}
+
+/* =========================================
+   ICON
+========================================= */
+
+.desktop-home-stat-icon {
+
+    width: 74px;
+    height: 74px;
+
+    min-width: 74px;
+    min-height: 74px;
+
+    background: #eef4ff;
+
+    border: 2px solid #dbeafe;
+    border-radius: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.desktop-home-stat-icon svg {
+
+    font-size: 1.5rem;
+
+    color: #2563eb;
+
+}
+
+/* =========================================
+   INFO
+========================================= */
+
+.desktop-home-stat-info {
+
+    flex: 1;
+
+}
+
+.desktop-home-stat-info h3 {
+
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: -1px;
+
+    color: #020617;
+
+    margin-bottom: 0.45rem;
+
+}
+
+.desktop-home-stat-info span {
+
+    display: block;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    line-height: 1.7;
+
+    color: #64748b;
+
+}
+
+/* =========================================
+   META
+========================================= */
+
+#desktop-home-meta,
+.desktop-home-meta {
+
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 1rem;
+
+    flex-wrap: wrap;
+
+}
+
+.desktop-home-meta-item {
+
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+
+}
+
+.desktop-home-meta-item span {
+
+    font-size: 0.94rem;
+    font-weight: 500;
+
+    color: #64748b;
+
+}
+
+.desktop-home-meta-item strong {
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    color: #0f172a;
+
+}
+
+#desktop-home-meta-divider,
+.desktop-home-meta-divider {
+
+    color: #94a3b8;
+
+    font-weight: 700;
+
+}
+
+/* =========================================
+   MOBILE BUTTON
+========================================= */
+
+#desktop-home-next,
+.desktop-home-next {
+
+    display: none;
+
+}
+
+#desktop-home-next-btn,
+.desktop-home-next-btn {
+
+    width: 100%;
+    max-width: 320px;
+    height: 56px;
+
+    border: 2px solid #0f172a;
+    border-radius: 0;
+
+    background: #ffffff;
+    color: #0f172a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.7rem;
+
+    font-size: 0.95rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    box-shadow:
+        6px 6px 0px #000000;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease,
+        color 0.25s ease;
+
+    -webkit-tap-highlight-color: transparent;
+
+}
+
+#desktop-home-next-btn:hover,
+.desktop-home-next-btn:hover {
+
+    transform: none;
+
+    background: #1e3a8a;
+
+    border-color: #1e3a8a;
+
+    color: #ffffff;
+
+    box-shadow:
+        6px 6px 0px #000000;
+
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+    #desktop-home-section,
+    .desktop-home {
+
+        padding-top: 130px;
+        padding-bottom: 70px;
+
+    }
+
+    #desktop-home-logo,
+    .desktop-home-logo {
+
+        width: 220px;
+
+    }
+
+    #desktop-home-title,
+    .desktop-home-title {
+
+        font-size: 4.8rem;
+
+        letter-spacing: -4px;
+
+        margin-bottom: 1.4rem;
+
+    }
+
+    #desktop-home-title-line-wrapper,
+    .desktop-home-title-line-wrapper {
+
+        max-width: 520px;
+
+    }
+
+    #desktop-home-tagline,
+    .desktop-home-tagline {
+
+        font-size: 1.3rem;
+
+    }
+
+    #desktop-home-description,
+    .desktop-home-description {
+
+        font-size: 1rem;
+
+        line-height: 1.9;
+
+    }
+
+    #desktop-home-stats,
+    .desktop-home-stats {
+
+        grid-template-columns: 1fr;
+
+        gap: 1rem;
+
+    }
+
+    .desktop-home-stat-card {
+
+        padding: 1.7rem;
+
+    }
+
+    /* =========================================
+       MOBILE NEXT BUTTON
+    ========================================= */
+
+    #desktop-home-next,
+    .desktop-home-next {
+
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        margin-top: 1rem;
+
+    }
+
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 575px) {
+
+    #desktop-home-section,
+    .desktop-home {
+
+        padding-top: 105px;
+        padding-bottom: 40px;
+
+    }
+
+    #desktop-home-container,
+    .desktop-home .container {
+
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+
+    #desktop-home-logo-wrapper,
+    .desktop-home-logo-wrapper {
+
+        margin-bottom: 1.4rem;
+
+    }
+
+    #desktop-home-logo,
+    .desktop-home-logo {
+
+        width: 180px;
+
+    }
+
+    #desktop-home-title,
+    .desktop-home-title {
+
+        font-size: 3.2rem;
+
+        line-height: 1;
+
+        letter-spacing: -2px;
+
+        margin-bottom: 1rem;
+
+    }
+
+    #desktop-home-title-line-wrapper,
+    .desktop-home-title-line-wrapper {
+
+        max-width: 240px;
+
+    }
+
+    #desktop-home-title-line,
+    .desktop-home-title-line {
+
+        height: 4px;
+
+    }
+
+    #desktop-home-tagline,
+    .desktop-home-tagline {
+
+        font-size: 1.08rem;
+
+        line-height: 1.5;
+
+    }
+
+    #desktop-home-description,
+    .desktop-home-description {
+
+        font-size: 0.96rem;
+
+        line-height: 1.9;
+
+    }
+
+    #desktop-home-stats,
+    .desktop-home-stats {
+
+        gap: 1rem;
+
+        margin-bottom: 2rem;
+
+    }
+
+    .desktop-home-stat-card {
+
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+
+        padding: 1.6rem 1.2rem;
+
+    }
+
+    .desktop-home-stat-card:hover {
+
+        transform: none;
+
+        border-color: #dbe3ef;
+
+        box-shadow:
+            0 8px 20px rgba(15, 23, 42, 0.05);
+
+    }
+
+    .desktop-home-stat-icon {
+
+        width: 64px;
+        height: 64px;
+
+        min-width: 64px;
+        min-height: 64px;
+
+    }
+
+    .desktop-home-stat-icon svg {
+
+        font-size: 1.3rem;
+
+    }
+
+    .desktop-home-stat-info h3 {
+
+        font-size: 1.9rem;
+
+    }
+
+    .desktop-home-stat-info span {
+
+        font-size: 0.92rem;
+
+        line-height: 1.5;
+
+    }
+
+    #desktop-home-meta,
+    .desktop-home-meta {
+
+        gap: 0.5rem;
+
+        margin-bottom: 2rem;
+
+    }
+
+    .desktop-home-meta-item span,
+    .desktop-home-meta-item strong,
+    #desktop-home-meta-divider,
+    .desktop-home-meta-divider {
+
+        font-size: 0.82rem;
+
+    }
+
+}

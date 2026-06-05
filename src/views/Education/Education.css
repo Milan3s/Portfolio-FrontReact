@@ -1,0 +1,762 @@
+/* src/views/Education/Education.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap");
+
+/* =========================================
+   RESET
+========================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+
+  background: #f7f8fc;
+
+  overflow-x: hidden;
+}
+
+/* =========================================
+   SECTION
+========================================= */
+
+.desktop-education {
+  width: 100%;
+  min-height: 100vh;
+
+  padding-top: 110px;
+  padding-bottom: 70px;
+
+  background: #f7f8fc;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.desktop-education .container {
+  max-width: 1320px;
+}
+
+/* =========================================
+   HEADER
+========================================= */
+
+.desktop-education-header {
+  margin-bottom: 2.5rem;
+}
+
+/* =========================================
+   TITLE
+========================================= */
+
+.desktop-education-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+
+  color: #0f172a;
+
+  margin-bottom: 1rem;
+}
+
+/* =========================================
+   LINE
+========================================= */
+
+.desktop-education-line {
+  width: 100%;
+  height: 3px;
+
+  background: #2563eb;
+
+  border-radius: 999px;
+
+  margin-bottom: 1.3rem;
+}
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.desktop-education-description {
+  max-width: 760px;
+
+  font-size: 1rem;
+  font-weight: 500;
+
+  line-height: 1.9;
+
+  color: #475569;
+}
+
+/* =========================================
+   SECTION TITLE
+========================================= */
+
+.desktop-education-section {
+  margin-bottom: 3rem;
+}
+
+.desktop-education-section-title {
+  display: flex;
+  align-items: center;
+
+  gap: 0.7rem;
+
+  margin-bottom: 1rem;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.desktop-education-section-title svg {
+  font-size: 1rem;
+}
+
+/* =========================================
+   TABLE WRAPPER
+========================================= */
+
+.desktop-education-table-wrapper {
+  overflow-x: auto;
+
+  border: 2px solid #0f172a;
+
+  background: white;
+}
+
+/* =========================================
+   ACADEMIC TABLE
+========================================= */
+
+.desktop-education-academic-table {
+  width: 100%;
+
+  margin-bottom: 0;
+
+  border-collapse: collapse;
+
+  background: white;
+}
+
+.desktop-education-academic-table thead {
+  background: #0f172a;
+}
+
+.desktop-education-academic-table thead th {
+  background: #0f172a !important;
+
+  color: #ffffff !important;
+
+  padding: 1rem;
+
+  text-align: center;
+  vertical-align: middle;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+
+  white-space: nowrap;
+
+  border-right: 2px solid #334155;
+  border-bottom: 2px solid #0f172a;
+}
+
+.desktop-education-academic-table thead th:last-child {
+  border-right: none;
+}
+
+.desktop-education-academic-table thead th svg {
+  margin-right: 0.45rem;
+
+  font-size: 0.72rem;
+}
+
+.desktop-education-academic-table tbody td {
+  padding: 1.15rem 0.9rem;
+
+  vertical-align: middle;
+
+  border-right: 2px solid #cbd5e1;
+  border-bottom: 2px solid #cbd5e1;
+
+  background: white;
+}
+
+.desktop-education-academic-table tbody td:last-child {
+  border-right: none;
+}
+
+.desktop-education-academic-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.desktop-education-academic-table tbody tr:hover td {
+  background: #f8fafc;
+}
+
+/* =========================================
+   DEGREE
+========================================= */
+
+.desktop-education-degree {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  min-width: 320px;
+}
+
+.desktop-education-degree-icon {
+  width: 72px;
+  height: 72px;
+
+  min-width: 72px;
+  min-height: 72px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: transparent;
+}
+
+.desktop-education-degree-icon i {
+  font-size: 1.97rem;
+
+  line-height: 1;
+}
+
+.desktop-education-degree h3 {
+  font-size: 0.95rem;
+  font-weight: 700;
+
+  line-height: 1.45;
+
+  color: #0f172a;
+
+  margin-bottom: 0.2rem;
+}
+
+.desktop-education-degree span {
+  font-size: 0.82rem;
+  font-weight: 500;
+
+  color: #64748b;
+}
+
+/* =========================================
+   CENTER
+========================================= */
+
+.desktop-education-center h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  line-height: 1.45;
+
+  color: #0f172a;
+
+  margin-bottom: 0.2rem;
+}
+
+.desktop-education-center span {
+  font-size: 0.8rem;
+  font-weight: 500;
+
+  color: #64748b;
+}
+
+/* =========================================
+   CENTER TEXT
+========================================= */
+
+.desktop-education-center-text {
+  text-align: center;
+
+  font-size: 0.87rem;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+/* =========================================
+   STATUS
+========================================= */
+
+.education-status {
+  color: #16a34a;
+}
+
+.education-fct {
+  color: #2563eb;
+}
+
+/* =========================================
+   FINAL GRADE
+========================================= */
+
+.desktop-education-project {
+  text-align: center;
+
+  font-size: 1.35rem;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+/* =========================================
+   COURSES TABLE
+========================================= */
+
+.desktop-education-courses-table {
+  width: auto;
+
+  min-width: 100%;
+
+  border-collapse: collapse;
+
+  table-layout: auto;
+
+  background: white;
+}
+
+/* =========================================
+   COURSES HEAD
+========================================= */
+
+.desktop-education-courses-table thead th {
+  background: #0f172a !important;
+
+  color: #ffffff !important;
+
+  padding: 1rem;
+
+  text-align: center;
+  vertical-align: middle;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.5px;
+
+  border-right: 2px solid #334155;
+
+  white-space: nowrap;
+}
+
+.desktop-education-courses-table thead th:last-child {
+  border-right: none;
+}
+
+.desktop-education-courses-table thead th svg {
+  margin-right: 0.45rem;
+
+  font-size: 0.72rem;
+}
+
+/* =========================================
+   COURSES BODY
+========================================= */
+
+.desktop-education-courses-table tbody td {
+  padding: 1.35rem 1rem;
+
+  vertical-align: middle;
+
+  background: #ffffff;
+
+  border-right: 2px solid #cbd5e1;
+  border-bottom: 2px solid #cbd5e1;
+}
+
+.desktop-education-courses-table tbody td:last-child {
+  border-right: none;
+}
+
+.desktop-education-courses-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.desktop-education-courses-table tbody tr:hover td {
+  background: #f8fafc;
+}
+
+/* =========================================
+   COURSE
+========================================= */
+
+.desktop-education-course {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  min-width: 260px;
+}
+
+/* =========================================
+   COURSE ICON
+========================================= */
+
+.desktop-education-course-icon {
+  width: 42px;
+  height: 42px;
+
+  min-width: 42px;
+  min-height: 42px;
+
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  background: transparent;
+}
+
+.desktop-education-course-icon i {
+  font-size: 2.2rem;
+
+  line-height: 1;
+}
+
+/* =========================================
+   COURSE TITLE
+========================================= */
+
+.desktop-education-course h3 {
+  margin: 0;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  line-height: 1.5;
+
+  color: #0f172a;
+}
+
+/* =========================================
+   COLUMN SIZES
+========================================= */
+
+.desktop-education-courses-table tbody td:nth-child(1) {
+  width: auto;
+}
+
+.desktop-education-courses-table tbody td:nth-child(2) {
+  width: 180px;
+
+  text-align: center;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  color: #0f172a;
+}
+
+.desktop-education-courses-table tbody td:nth-child(3) {
+  width: 320px;
+
+  text-align: center;
+
+  font-size: 0.88rem;
+  font-weight: 700;
+
+  line-height: 1.7;
+
+  color: #0f172a;
+}
+
+.desktop-education-courses-table tbody td:nth-child(4) {
+  width: 140px;
+
+  text-align: center;
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  color: #16a34a;
+}
+
+.desktop-education-courses-table tbody td:nth-child(5) {
+  width: 180px;
+
+  text-align: center;
+
+  font-size: 0.84rem;
+  font-weight: 700;
+
+  color: #16a34a;
+
+  text-transform: uppercase;
+}
+
+/* =========================================
+   ICON COLORS
+========================================= */
+
+.desktop-education-course-icon .fa-docker {
+  color: #2496ed;
+}
+
+.desktop-education-course-icon .fa-java {
+  color: #f89820;
+}
+
+.desktop-education-course-icon .fa-github {
+  color: #ffffff;
+}
+
+.desktop-education-course-icon .fa-network-wired {
+  color: #8b5cf6;
+}
+
+.desktop-education-course-icon .fa-leaf {
+  color: #6db33f;
+}
+
+.desktop-education-course-icon .fa-code-branch {
+  color: #2563eb;
+}
+
+/* =========================================
+   NEXT BUTTON
+========================================= */
+
+.desktop-education-next {
+  display: none;
+}
+
+/* =========================================
+   MOBILE + TABLET
+========================================= */
+
+@media (max-width: 991px) {
+
+  .desktop-education {
+
+    padding-top: 120px;
+    padding-bottom: 50px;
+
+  }
+
+  /* =========================================
+     HEADER
+  ========================================= */
+
+  .desktop-education-header {
+
+    margin-bottom: 2rem;
+
+  }
+
+  .desktop-education-title {
+
+    font-size: 1.8rem;
+
+  }
+
+  .desktop-education-description {
+
+    font-size: 0.93rem;
+
+    line-height: 1.8;
+
+  }
+
+  /* =========================================
+     TABLES
+  ========================================= */
+
+  .desktop-education-academic-table {
+
+    min-width: 1100px;
+
+  }
+
+  .desktop-education-courses-table {
+
+    min-width: 1050px;
+
+  }
+
+  /* =========================================
+     CONTENT
+  ========================================= */
+
+  .desktop-education-degree {
+
+    min-width: 280px;
+
+  }
+
+  .desktop-education-course {
+
+    min-width: 320px;
+
+  }
+
+  .desktop-education-degree-icon {
+
+    width: 62px;
+    height: 62px;
+
+    min-width: 62px;
+    min-height: 62px;
+
+  }
+
+  .desktop-education-degree-icon i {
+
+    font-size: 1.75rem;
+
+  }
+
+  .desktop-education-course-icon {
+
+    width: 42px;
+    height: 42px;
+
+    min-width: 42px;
+    min-height: 42px;
+
+  }
+
+  .desktop-education-course-icon i {
+
+    font-size: 2rem;
+
+  }
+
+  .desktop-education-degree h3 {
+
+    font-size: 0.92rem;
+
+    line-height: 1.45;
+
+  }
+
+  .desktop-education-course h3 {
+
+    font-size: 0.95rem;
+
+    line-height: 1.45;
+
+  }
+
+  /* =========================================
+     NEXT BUTTON WRAPPER
+  ========================================= */
+
+  .desktop-education-next {
+
+    display: flex !important;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    margin-top: 4rem;
+
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+  }
+
+  /* =========================================
+     NEXT BUTTON
+  ========================================= */
+
+  .desktop-education-next-btn {
+
+    width: calc(100% - 4px);
+
+    max-width: 420px;
+
+    flex-shrink: 0;
+
+    margin: 0 auto;
+
+    height: 56px;
+
+    padding: 0 1.7rem;
+
+    border: 2px solid #0f172a;
+
+    border-radius: 0;
+
+    background: #ffffff;
+
+    color: #0f172a;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.75rem;
+
+    font-size: 0.92rem;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      background 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease;
+
+    box-shadow:
+      6px 6px 0px #000000;
+
+  }
+
+  .desktop-education-next-btn svg {
+
+    font-size: 0.95rem;
+
+    flex-shrink: 0;
+
+  }
+
+  /* =========================================
+     MOBILE HOVER
+  ========================================= */
+
+  .desktop-education-next-btn:hover {
+
+    transform: none;
+
+    background: #1e3a8a;
+
+    border-color: #1e3a8a;
+
+    color: #ffffff;
+
+    box-shadow:
+      6px 6px 0px #000000;
+
+  }
+
+}
