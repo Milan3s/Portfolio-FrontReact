@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./docs/portfolio-cover.png" alt="Portfolio David Milanés" width="100%">
+  <img src="portfolio-dm.png" alt="Portfolio David Milanés" width="100%">
 </p>
 
 <h1 align="center">🚀 Portfolio Full Stack - Laravel + React</h1>
